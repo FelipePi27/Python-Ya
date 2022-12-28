@@ -15,7 +15,7 @@ x=1
 n=int(input("Bienvenidos, Ingrese el número de EMPLEADOS a procesar: "))
 while x<=n:
     sueldo=int(input("Ingrese monto de su SUELDO: "))
-    if sueldo<=300:
+    if sueldo<=300000:
         cont1=cont1+1
        
     else:
@@ -23,6 +23,6 @@ while x<=n:
     gastos=gastos+sueldo
     x=x+1
 
-print("Cantidad Empleados que su sueldo es menor a 300: ",(cont1))
-print("Cantidad Empleados que su sueldo es mayor a 500: ",(cont2))
+print("Cantidad Empleados que su sueldo es menor o igual 300000: ",(cont1))
+print("Cantidad Empleados que su sueldo es mayor a 300000: ",(cont2))
 print("El gasto total en sueldos es: ",(gastos))
